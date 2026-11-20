@@ -1,0 +1,18 @@
+/* CreatorPulse design tokens — single source of truth for the 6-module app */
+:root {
+  --cp-bg: #0f172a;
+  --cp-surface: rgba(255, 255, 255, 0.04);
+  --cp-surface-solid: #1e293b;
+  --cp-border: rgba(255, 255, 255, 0.09);
+  --cp-text: #e2e8f0;
+  --cp-text-dim: #94a3b8;
+  --cp-primary: #8b5cf6;
+  --cp-primary-strong: #7c3aed;
+  --cp-accent: #ec4899;
+  --cp-success: #4ade80;
+  --cp-warning: #fbbf24;
+  --cp-danger: #f87171;
+  --cp-info: #38bdf8;
+  --cp-radius: 1rem;
+  --cp-radius-sm: 0.6rem;
+}

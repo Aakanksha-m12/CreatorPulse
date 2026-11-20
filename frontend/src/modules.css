@@ -1,0 +1,83 @@
+/* CreatorPulse modules — Bootstrap theme layer (professional, light-clean on dark shell) */
+.cp-module { color: #e2e8f0; }
+.cp-module .card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 1rem;
+  color: #e2e8f0;
+}
+.cp-module .card-header { background: transparent; border-bottom: 1px solid rgba(255,255,255,.08); font-weight: 700; }
+.cp-module .form-control, .cp-module .form-select {
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); color: #e2e8f0;
+}
+.cp-module .form-control::placeholder { color: #7c8aa5; }
+.cp-module .form-control:focus, .cp-module .form-select:focus {
+  background: rgba(255,255,255,.08); color: #fff; border-color: #8b5cf6;
+  box-shadow: 0 0 0 .2rem rgba(139,92,246,.25);
+}
+.cp-tag-chip {
+  display: inline-flex; align-items: center; gap: .35rem;
+  background: rgba(139,92,246,.16); border: 1px solid rgba(139,92,246,.4);
+  color: #ddd6fe; border-radius: 999px; padding: .2rem .65rem; font-size: .82rem;
+}
+.cp-tag-chip button { border: 0; background: transparent; color: #c4b5fd; line-height: 1; }
+.cp-tag-chip button:hover { color: #fff; }
+.cp-suggest-chip { cursor: pointer; }
+.cp-score-ring { width: 92px; height: 92px; }
+.cp-check-pass { color: #4ade80; }
+.cp-check-fail { color: #fbbf24; }
+.cp-dropzone {
+  border: 2px dashed rgba(139,92,246,.5); border-radius: 1rem;
+  background: rgba(139,92,246,.06); cursor: pointer; transition: .15s;
+}
+.cp-dropzone:hover, .cp-dropzone.dragging { background: rgba(139,92,246,.14); border-color: #8b5cf6; }
+.cp-grid-cell { min-width: 34px; }
+.cp-grid-hot { background: rgba(74,222,128,.25) !important; border-color: #4ade80 !important; }
+.cp-grid-cold { opacity: .45; }
+img.cp-annotated { border-radius: .75rem; border: 1px solid rgba(255,255,255,.12); max-height: 260px; object-fit: contain; background: #0b1120; }
+
+/* Skeleton loaders (replace bare "Loading..." text) */
+.cp-skeleton {
+  border-radius: .6rem;
+  min-height: 74px;
+  background: linear-gradient(90deg, rgba(255,255,255,.05) 25%, rgba(255,255,255,.11) 50%, rgba(255,255,255,.05) 75%);
+  background-size: 200% 100%;
+  animation: cp-shimmer 1.2s infinite;
+}
+@keyframes cp-shimmer { to { background-position: -200% 0; } }
+.cp-skel-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: .75rem; }
+
+/* Dashboard AI insights */
+.ai-insights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: .75rem; }
+.ai-insight { display: flex; gap: .6rem; padding: .8rem; border: 1px solid rgba(255,255,255,.08); border-radius: .75rem; background: rgba(255,255,255,.03); }
+.ai-insight-icon { font-size: 1.2rem; color: #a78bfa; }
+.ai-insight p { margin: .15rem 0 .4rem; font-size: .82rem; color: #94a3b8; }
+
+/* Friendly error state */
+.cp-error { text-align: center; padding: 1.5rem 1rem; }
+.cp-error p { color: #94a3b8; font-size: .85rem; margin: .4rem 0 .8rem; }
+
+/* Follower's-eye phone preview */
+.cp-phone-wrap { max-width: 300px; }
+.cp-phone {
+  width: 100%; border-radius: 1.6rem; overflow: hidden; position: relative;
+  border: 3px solid rgba(255,255,255,.18); background: #0b1120;
+  box-shadow: 0 12px 32px rgba(0,0,0,.45);
+}
+.cp-phone-notch {
+  position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
+  width: 90px; height: 18px; border-radius: 999px; background: rgba(0,0,0,.75); z-index: 3;
+}
+.cp-yt img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+.cp-yt-ph { aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: #7c8aa5; font-size: .8rem; background: rgba(255,255,255,.05); }
+.cp-yt-title { font-weight: 700; font-size: .85rem; color: #fff; padding: .5rem .6rem 0; }
+.cp-yt-meta { font-size: .68rem; color: #94a3b8; padding: .1rem .6rem; }
+.cp-yt-desc { font-size: .72rem; color: #cbd5e1; padding: .25rem .6rem 0; }
+.cp-yt-tags { font-size: .68rem; color: #38bdf8; padding: .25rem .6rem .7rem; word-break: break-word; }
+.cp-reel { position: relative; aspect-ratio: 9/16; max-height: 480px; }
+.cp-reel img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cp-reel-grad { position: absolute; inset: 0; background: linear-gradient(transparent 40%, rgba(0,0,0,.8)); }
+.cp-reel-overlay { position: absolute; left: 0; right: 44px; bottom: 0; padding: .6rem; }
+.cp-reel-cap { font-size: .75rem; color: #fff; font-weight: 600; }
+.cp-reel-tags { font-size: .65rem; color: #7dd3fc; margin-top: .2rem; }
+.cp-reel-actions { position: absolute; right: -38px; bottom: 12px; display: flex; flex-direction: column; gap: .5rem; font-size: 1rem; }

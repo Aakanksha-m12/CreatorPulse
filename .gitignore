@@ -1,0 +1,53 @@
+# Java and Maven
+target/
+*.class
+*.jar
+*.war
+
+# React and Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+
+# Private uploads
+uploads/
+**/uploads/
+
+# Logs
+*.log
+*.log.*
+*.gz
+hs_err_pid*.log
+
+# Secrets
+.env
+.env.*
+!.env.example
+application-local.properties
+application-prod.properties
+secrets/
+*.pem
+*.key
+*.jks
+*.p12
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+~$*.doc
+~$*.docx
+
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store
